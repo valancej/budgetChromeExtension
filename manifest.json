@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+    
+    "name": "Read to Me",
+    "description": "This extension lets you easily manage your personal finances",
+    "version": "0.2",
+    "content_scripts": [ {
+    "all_frames": true,
+    "js": [ "script.js" ],
+    "matches": [ "http://*/*", "https://*/*", "file://*/*" ]
+  } ],
+    
+    "browser_action": {
+        "default_icon": "smileyFace.png",
+        "default_popup": "popup.html",
+        "default_title": "Read me Text"
+    },
+"background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": true
+  },
+"permissions": [
+    "activeTab"
+  ]
+
+}
