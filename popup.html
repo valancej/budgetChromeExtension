@@ -5,38 +5,16 @@
  value "popup.html".
  -->
 <html>
-    <head>
-    <title>Read to Me</title>
-        <script src="script.js"></script>
-    </head>
-    
-<!--
-    <script>
-        function pasteSelection() {
-            chrome.tabs.getSelected(null, function(tab) {
-            chrome.tabs.sendRequest(tab.id, {method: "getSelection"}, function (response) {
-            console.log(response.data);
-            });
-        });
-    }
-    </script>
--->
-    <body>
-        
-<!--       <span unselectable="on" onclick="pasteSelection()">Click, unselectable</span> -->
-        
-     <button id="Read" unselectable="on"> Submit </button>
-    </body>
-    
-    
-    
-<!--
-    <body>
-    <h3> <center> Paste the links below </center></h3>
-    <hr>
-    <textarea rows="10" cols="80" id="ulrs"></textarea>
-    <br>
-    <button type ="submit" align="center" style="width:470px;" id="button"> Submit </button>
-    </body>
--->
+
+<head>
+  <title>Read to Me</title>
+</head>
+
+<body>
+
+  <button id="Read" unselectable="on"> Submit </button>
+  <script src="script.js"></script>
+
+</body>
+
 </html>
